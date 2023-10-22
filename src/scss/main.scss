@@ -1,0 +1,15 @@
+// import bs functions so they can be used anywhere. Keep it at the top
+@import '../node_modules/bootstrap/scss/functions';
+// import bs functions so they can be used anywhere. Keep it at the top
+
+
+
+
+
+// import vars and options before bs
+@import 'vars';
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// import bootstrap icons. Don't use the scss file. it doesn't work. 
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';

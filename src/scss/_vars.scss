@@ -1,2 +1,37 @@
-$primary:#001498;
-$secondary: #FB4F14;
+// global colors
+$primary: #ff3287;
+$secondary: #d80cf3;
+$light: #fff9f1;
+//these are options
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-negative-margins: true;
+//import variables and mixins
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/variables-dark';
+@import '../node_modules/bootstrap/scss/mixins';
+//define variables and mixins here:
+
+
+//define $theme-color mappings here after variables are imported! these are appended to the theme-colors:
+$custom-colors:(
+    "primary-light":  #fff8fb,
+    "secondary-light": #f6fffb
+);
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 7,
+  8: $spacer * 8,
+  9: $spacer * 9,
+  10: $spacer * 10,
+
+);
+$theme-colors: map-merge($theme-colors, $custom-colors );
